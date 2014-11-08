@@ -2,8 +2,8 @@
 //  SwipeBetweenViewControllers.swift
 //  beacon
 //
-//  Created by HAYAKAWA TOMOAKI on 2014/11/06.
-//  Copyright (c) 2014年 HAYAKAWA TOMOAKI. All rights reserved.
+//  Created by Richard Kim, and HAYAKAWA TOMOAKI on 2014/11/06.
+//  Copyright (c) 2014 Richard Kim, and HAYAKAWA TOMOAKI. All rights reserved.
 //
 
 import UIKit
@@ -49,10 +49,9 @@ class SwipeBetweenViewControllers: UINavigationController,UIPageViewControllerDe
         super.init(rootViewController: rootViewController)
     }
 
-    
     var pageScrollView :UIScrollView
     var currentPageIndex :Int = 0
-    
+
     var viewControllerArray:[UIViewController] = []
     var navDelegate:AnyObject?
     var selectionBar :UIView
@@ -132,14 +131,6 @@ class SwipeBetweenViewControllers: UINavigationController,UIPageViewControllerDe
         self.setupPageViewController()
         self.setupSegmentButtons()
     }
-    
-    //- (void)viewDidLayoutSubviews
-    //{
-    //    [self setupPageViewController];
-    ////    [self setupSegmentButtons];
-    //
-    ////    [self.view layoutSubviews];
-    //}
     
     //%%% generic setup stuff for a pageview controller.  Sets up the scrolling style and delegate for the controller
     func setupPageViewController() {

@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B1C875861A0DE4C800ABE09F /* SwipeBetweenViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C875851A0DE4C800ABE09F /* SwipeBetweenViewControllers.swift */; };
+		B1C875891A0DED1100ABE09F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1C875881A0DED1100ABE09F /* Default-568h@2x.png */; };
 		B1D9DDBE19FF6B08001615F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D9DDBD19FF6B08001615F7 /* AppDelegate.swift */; };
-		B1D9DDC019FF6B08001615F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D9DDBF19FF6B08001615F7 /* ViewController.swift */; };
 		B1D9DDC319FF6B08001615F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1D9DDC119FF6B08001615F7 /* Main.storyboard */; };
 		B1D9DDC519FF6B08001615F7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1D9DDC419FF6B08001615F7 /* Images.xcassets */; };
 		B1D9DDC819FF6B08001615F7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1D9DDC619FF6B08001615F7 /* LaunchScreen.xib */; };
@@ -28,10 +28,10 @@
 
 /* Begin PBXFileReference section */
 		B1C875851A0DE4C800ABE09F /* SwipeBetweenViewControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeBetweenViewControllers.swift; sourceTree = "<group>"; };
+		B1C875881A0DED1100ABE09F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		B1D9DDB819FF6B08001615F7 /* SwipeBetweenViewControllers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipeBetweenViewControllers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1D9DDBC19FF6B08001615F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1D9DDBD19FF6B08001615F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B1D9DDBF19FF6B08001615F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B1D9DDC219FF6B08001615F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B1D9DDC419FF6B08001615F7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B1D9DDC719FF6B08001615F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -79,9 +79,8 @@
 		B1D9DDBA19FF6B08001615F7 /* SwipeBetweenViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				B1C875851A0DE4C800ABE09F /* SwipeBetweenViewControllers.swift */,
 				B1D9DDBD19FF6B08001615F7 /* AppDelegate.swift */,
-				B1D9DDBF19FF6B08001615F7 /* ViewController.swift */,
+				B1C875851A0DE4C800ABE09F /* SwipeBetweenViewControllers.swift */,
 				B1D9DDC119FF6B08001615F7 /* Main.storyboard */,
 				B1D9DDC419FF6B08001615F7 /* Images.xcassets */,
 				B1D9DDC619FF6B08001615F7 /* LaunchScreen.xib */,
@@ -93,6 +92,7 @@
 		B1D9DDBB19FF6B08001615F7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B1C875881A0DED1100ABE09F /* Default-568h@2x.png */,
 				B1D9DDBC19FF6B08001615F7 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -196,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1D9DDC319FF6B08001615F7 /* Main.storyboard in Resources */,
+				B1C875891A0DED1100ABE09F /* Default-568h@2x.png in Resources */,
 				B1D9DDC819FF6B08001615F7 /* LaunchScreen.xib in Resources */,
 				B1D9DDC519FF6B08001615F7 /* Images.xcassets in Resources */,
 			);
@@ -216,7 +217,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1C875861A0DE4C800ABE09F /* SwipeBetweenViewControllers.swift in Sources */,
-				B1D9DDC019FF6B08001615F7 /* ViewController.swift in Sources */,
 				B1D9DDBE19FF6B08001615F7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +343,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwipeBetweenViewControllers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -353,6 +354,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwipeBetweenViewControllers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
