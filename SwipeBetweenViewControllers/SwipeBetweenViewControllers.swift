@@ -134,7 +134,7 @@ class SwipeBetweenViewControllers: UINavigationController,UIPageViewControllerDe
     
     //%%% generic setup stuff for a pageview controller.  Sets up the scrolling style and delegate for the controller
     func setupPageViewController() {
-        pageController = self.topViewController as UIPageViewController
+        pageController = self.topViewController as! UIPageViewController
         pageController.delegate = self
         pageController.dataSource = self
         pageController.setViewControllers([viewControllerArray[0]], direction: UIPageViewControllerNavigationDirection.Forward, animated: true, completion: nil)
@@ -145,7 +145,7 @@ class SwipeBetweenViewControllers: UINavigationController,UIPageViewControllerDe
     func syncScrollView() {
         for view in pageController.view.subviews {
             if view.isKindOfClass(UIScrollView) {
-                pageScrollView = view as UIScrollView
+                pageScrollView = view as! UIScrollView
                 pageScrollView.delegate = self
             }
         }
@@ -273,7 +273,7 @@ class SwipeBetweenViewControllers: UINavigationController,UIPageViewControllerDe
     
     func pageViewController(pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [AnyObject], transitionCompleted completed: Bool) {
         if (completed) {
-            currentPageIndex = self.indexOfController(pageViewController.viewControllers.last as UIViewController)
+            currentPageIndex = self.indexOfController(pageViewController.viewControllers.last as! UIViewController)
         }
     }
     
